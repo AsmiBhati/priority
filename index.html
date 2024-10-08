@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Priority Scheduling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Restaurant Priority Entry System</h1>
+  
+  <!-- Form for adding customers to the queue -->
+  <form id="entryForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="priority">Priority:</label>
+    <select id="priority">
+      <option value="1">VIP</option>
+      <option value="2">Regular</option>
+      <option value="3">New Customer</option>
+    </select>
+
+    <button type="submit">Add to Queue</button>
+  </form>
+
+  <!-- List to display the queue -->
+  <h2>Queue</h2>
+  <ul id="queueList"></ul>
+
+  <!-- Audio for VIP entry -->
+  <audio id="vipSound" src="vip-sound.mp3"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
